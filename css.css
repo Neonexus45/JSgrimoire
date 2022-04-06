@@ -1,0 +1,141 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("res/background.jpg");
+}
+::selection{
+    color: #fff;
+    background: #4D59FB;
+}
+.wrapper{
+    width: 420px;
+    border-radius: 7px;
+    background: #fff;
+    padding: 25px 28px 35px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+.wrapper header{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+.wrapper .search{
+    position: relative;
+    margin: 35px 0 0;
+}
+.search input{
+    height: 53px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 0 42px;
+    border: 1px solid #999;
+}
+.search input:focus{
+    padding: 0 41px;
+    border: 2px solid #4D59FB;
+}
+.search input::placeholder{
+    color: #B8B8B8;
+}
+.search :where(i, span){
+    position: absolute;
+    top: 50%;
+    color: #999;
+    transform: translateY(-50%);
+}
+.search i{
+    left: 18px;
+    pointer-events: none;
+    font-size: 16px;
+}
+.search input:focus ~ i{
+    color: #4D59FB;
+}
+.search span{
+    right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    display: none;
+}
+.search input:valid ~ span{
+    display: block;
+}
+.wrapper .info-text{
+    font-size: 13px;
+    color: #9A9A9A;
+    margin: 15px 0 0;
+}
+.wrapper.active .info-text{
+    display: none;
+}
+.info-text span{
+    font-weight: 500;
+
+}
+
+#result {
+    border: 1px dotted #ccc;
+    padding: 3px;
+    display: none;
+}
+#result ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#result ul li {
+    padding: 5px 0;
+}
+#result ul li:hover {
+    background: #eee;
+}
+.wrapper > div > p{
+    font-weight: bold;
+    font-size: large;
+}
+p > span{
+    font-weight: normal;
+    font-size: medium;
+}
+#spell_infos{
+    display: none;
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+    rgba(0, 0, 0, .2),
+    rgba(0, 0, 0, .2) 30%,
+    rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+    inset 2px 2px 3px rgba(0, 0, 0, .6);
+}

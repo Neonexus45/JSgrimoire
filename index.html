@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Grimoire</title>
+        <link rel="stylesheet" href="css.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>Grimoire D&d</header>
+            <form class="search" autocomplete="off">
+                <i class="fas fa-search"></i>
+                <input type="text" name="q" id="q" placeholder="Cherchez un sort" required spellcheck="false" onKeyUp="showResults(this.value)">
+                <button onclick="reset()" type="button" class="styled">Boutton test</button>
+            </form>
+            <div id="result"></div>
+            <p class="info-text">Renseignez un sort....</p>
+
+            <div id="spell_infos">
+                <p>Casting Time :   <span name="casting-time"></span></p>
+                <p>Range :          <span name="range"></span></p>
+                <p>Damage type :    <span name="damage-type"></span></p>
+                <p>Components :     <span name="components"></span></p>
+                <p>Duration :       <span name="duration"></span></p>
+                <p>Classes :        <span name="classes"></span></p>
+                <p>Description :<br><span name="description"></span></p>
+                <p>Higher Level :<br><span name="higher-level"></span></p>
+
+
+            </div>
+        </div>
+    </body>
+</html>
